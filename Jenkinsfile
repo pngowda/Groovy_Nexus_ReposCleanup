@@ -1,6 +1,7 @@
 node('windows ') {
 	def CleanupScript     = "NexusArtifactCleanup.groovy"
-	
+	withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'nex_id', usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
+    {
 		stage ('checkout'){ 
 			checkout scm
 		}
@@ -13,5 +14,5 @@ node('windows ') {
 				bat "${env.WORKSPACE}\\${CleanupScript}"
 			}
 		}
-	
+       }
 }
