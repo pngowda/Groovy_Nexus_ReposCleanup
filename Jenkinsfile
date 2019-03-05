@@ -1,4 +1,4 @@
-node('windows ') {
+node('master') {
 	def CleanupScript     = "NexusArtifactCleanup.groovy"
 	withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'nex_id', usernameVariable: 'nexusUsername', passwordVariable: 'nexusPassword']])
     {
