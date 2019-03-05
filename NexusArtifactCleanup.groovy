@@ -2,14 +2,15 @@
 import groovyx.net.http.*;
 import static groovyx.net.http.ContentType.*;
 import static groovyx.net.http.Method.*;
-@Grab(group='org.codehaus.groovy.modules.http-builder', module='http-builder', version='0.7' )
+
 
 class NexusArtifactCleanup {
-
+@Grab(group='org.codehaus.groovy.modules.http-builder', module='http-builder', version='0.7' )
 	/**
 	 *  Settings in which to run script.
 	 */
 	def settings = [
+		
 		baseUrl: 'https://projects.itemis.de/nexus',
 		repositoryId: 'de.itemis.mps.build',
 		pattern: '.*',
