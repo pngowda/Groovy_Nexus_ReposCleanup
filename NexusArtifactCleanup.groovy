@@ -5,7 +5,7 @@ import static groovyx.net.http.Method.*;
 
 
 class NexusArtifactCleanup {
-@Grab(group='org.codehaus.groovy.modules.http-builder', module='http-builder', version='0.7' )
+
 	/**
 	 *  Settings in which to run script.
 	 */
