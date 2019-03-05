@@ -21,7 +21,7 @@ class NexusArtifactCleanup {
 	 * MAIN Method.
 	 */
 	def static main( def args ) {
-
+                println "in main method"
 		NexusArtifactCleanup cleanup = new NexusArtifactCleanup();
 		cleanup.cleanupArtifacts();
 	}
