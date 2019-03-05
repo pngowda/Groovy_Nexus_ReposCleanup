@@ -33,7 +33,7 @@ class NexusArtifactCleanup {
 	 * 3) Rebuild Nexus Repository Metadata.
 	 */
 	def cleanupArtifacts() {
-
+                println "i am here"
 		def nexusRepositoriesServiceUrl = settings.baseUrl + '/service/local/repositories/' +  settings.repositoryId + '/content/';
 		def nexusMetadataServiceUrl = settings.baseUrl + '/service/local/metadata/repositories/' +  settings.repositoryId + '/content/';
 
