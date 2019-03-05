@@ -63,7 +63,7 @@ class NexusArtifactCleanup {
 
 		def artifactUrls = [];
 		def xml = fetchContent(url);
-
+                println xml
 		xml.data.'content-item'.each {
 			def text = it.text.text();
 			def resourceURI = it.resourceURI.text();
