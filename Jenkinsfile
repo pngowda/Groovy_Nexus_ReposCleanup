@@ -8,10 +8,10 @@ node('windows ') {
 		stage ('cleanup nexus'){
 			if(isUnix()) {
 				sh "chmod +x ${CleanupScript}"
-				sh "${env.WORKSPACE}\\${CleanupScript}"
+				groovy "${env.WORKSPACE}\\${CleanupScript}"
 			}
 			else{
-				bat "${env.WORKSPACE}\\${CleanupScript}"
+				groovy "${env.WORKSPACE}\\${CleanupScript}"
 			}
 		}
        }
