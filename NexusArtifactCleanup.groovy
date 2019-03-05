@@ -13,8 +13,8 @@ class NexusArtifactCleanup {
 		repositoryId: 'de.itemis.mps.build',
 		pattern: '.*',
 		age: 0,
-		nexusUsername: 'pgowda',
-		nexusPassword: 'Mar2018@91'
+		nexusUsername: '',
+		nexusPassword: ''
 	];
 
 	/**
