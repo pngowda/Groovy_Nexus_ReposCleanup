@@ -39,7 +39,7 @@ class NexusArtifactCleanup {
 
 		// Find all repository items that match the regular expression pattern defined in settings.
 		def urls = findArtifacts(nexusRepositoriesServiceUrl, settings.pattern, settings.age);
-
+                
 		// The number of artifacts to be deleted.
 		def size = urls.size();
 
@@ -71,7 +71,7 @@ class NexusArtifactCleanup {
 
 			if (text ==~ pattern) {
 				def lastModifiedDate = new Date().parse('yyyy-MM-dd HH:mm:ss.SSS z', it.lastModified.text());
-
+                                 println lastModifiedDate
 				if ((new Date() - age) >  lastModifiedDate) {
 					artifactUrls << resourceURI;
 				}
