@@ -1,7 +1,16 @@
 
 import groovyx.net.http.*;
-import static groovyx.net.http.ContentType.*;
-import static groovyx.net.http.Method.*;
+import groovyx.net.http.HTTPBuilder
+import groovyx.net.http.RESTClient
+import groovyx.net.http.HttpResponseDecorator
+
+// ContentType static import
+import static groovyx.net.http.ContentType.*
+// Method static import
+import static groovyx.net.http.Method.*
+	
+//import static groovyx.net.http.ContentType.*;
+//import static groovyx.net.http.Method.*;
 
 
 class NexusArtifactCleanup {
