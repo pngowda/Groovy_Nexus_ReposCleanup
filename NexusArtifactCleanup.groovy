@@ -20,8 +20,8 @@ class NexusArtifactCleanup {
 	 */
 	def settings = [
 		
-		baseUrl: 'https://projects.itemis.de/nexus',
-		repositoryId: 'de.itemis.mps.build',
+		baseUrl: 'baseurl/nexus',
+		repositoryId: '',
 		pattern: '.*',
 		age: 0,
 		nexusUsername: System.getenv('nexusUsername'),
